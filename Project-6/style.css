@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+}
+
+.landing-part1,
+.landing-part2 {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 1s ease-in;
+}
+
+.landing-part1 {
+  background-image: url(img/ps.jpg);
+}
+
+.landing-part1::before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-color: rgba(87, 84, 236, 0.7);
+  transition: all 1s ease-in;
+}
+
+.landing-part2 {
+  background-image: url(img/xbox.jpg);
+}
+
+.landing-part2::before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-color: rgba(43, 43, 43, 0.8);
+  transition: all 1s ease-in;
+}
+
+.landing-part1 h1,
+.landing-part2 h1 {
+  font-size: 64px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  text-overflow: clip;
+}
+
+.landing-part1 a,
+.landing-part2 a {
+  position: absolute;
+  text-decoration: none;
+  top: 44%;
+  left: 34%;
+  width: 200px;
+  border: 1px solid #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in, border-color 0.4s ease-in;
+}
+
+.landing-part1 a:hover {
+  background-color: blue;
+  border-color: blue;
+}
+
+.landing-part2 a:hover {
+  background-color: green;
+  border-color: green;
+}

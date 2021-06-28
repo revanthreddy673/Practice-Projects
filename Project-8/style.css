@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: steelblue;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.container h1 {
+  font-size: 200%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.input-div {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.input-div label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.input-div input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  padding: 10px 0;
+}
+
+.input-div input:focus {
+  outline: 0;
+  border-color: lightblue;
+}
+
+.btn {
+  width: 100%;
+  background-color: lightblue;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  color: black;
+}
+
+.register {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.register a {
+  color: lightblue;
+  text-decoration: none;
+}
+
+.input-div label span {
+  display: inline-block;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
